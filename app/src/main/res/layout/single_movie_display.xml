@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:id="@+id/moviePoster"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/moviePoster"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text"
+            android:id="@+id/movieTitle"
+            android:textStyle="bold"
+            android:layout_toLeftOf="@+id/next"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text"
+            android:textColor="@color/colorGreyLight"
+            android:layout_below="@+id/moviePoster"
+            android:padding="8dp"
+            android:id="@+id/movieReleaseDate"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text"
+            android:textColor="@color/colorGreyLight"
+            android:layout_below="@+id/moviePoster"
+            android:layout_alignParentRight="true"
+            android:padding="8dp"
+            android:id="@+id/movieAdault"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_next"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/next"/>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
