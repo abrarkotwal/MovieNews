@@ -20,9 +20,8 @@
         </activity>
         <activity
             android:name=".Activity.SingleMovieDisplayActivity"
-            android:label="@string/title_activity_single_movie_display"
             android:theme="@style/AppTheme" />
-        <activity android:name=".Activity.InfoActivity"></activity>
+        <activity android:name=".Activity.InfoActivity"/>
     </application>
 
 </manifest>

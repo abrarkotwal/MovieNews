@@ -147,9 +147,12 @@ public class SingleMovieDisplayActivity extends AppCompatActivity {
                     List<MovieImages> movieImages = response.body().getResults();
 
                     final List<MovieImages> displayImage = new ArrayList<>();
-                    for (int i = 0; i < 5; i++) {
+                    int i = 0;
+                    while (i < movieImages.size() && i < 5){
                         displayImage.add(movieImages.get(i));
+                        i++;
                     }
+
 
                     mPager.setAdapter(new ProductImagesAdapter(activity, displayImage));
                     indicator.setViewPager(mPager);

@@ -109,9 +109,8 @@
                 android:id="@+id/singleRating"
                 style="?android:attr/ratingBarStyleSmall"
                 android:isIndicator="true"
-                android:numStars="5"
+                android:numStars="20"
                 android:stepSize="0.1"
-                android:rating="3.5"
                 android:padding="10dp"/>
         </LinearLayout>
     </RelativeLayout>

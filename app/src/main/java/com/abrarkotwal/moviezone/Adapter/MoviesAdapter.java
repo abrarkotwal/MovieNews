@@ -57,6 +57,7 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MovieViewH
             public void onClick(View v) {
                 Intent intent = new Intent(context, SingleMovieDisplayActivity.class);
                 intent.putExtra("id",currentMovie.getId());
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_MULTIPLE_TASK);
                 context.startActivity(intent);
             }
         });
